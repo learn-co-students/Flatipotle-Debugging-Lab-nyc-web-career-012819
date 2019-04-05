@@ -15,10 +15,10 @@ class App extends Component {
   };
 
   render() {
-    const orders = this.state.orders.map((order, idx) => {
-      return <Order key={idx} {...order} />;
-    });
-
+    const orders = this.state.orders.map((order, idx) => (
+      <Order key={idx} {...order} />
+    ));
+    // remove curly braces or type 'return'
     return (
       <div className="App">
         <header className="App-header">
@@ -28,9 +28,8 @@ class App extends Component {
             alt="logo"
           />
         </header>
-
         <Form addOrder={this.addOrder} />
-
+        //pass something
         <div className="ui raised container segment">
           <h1 className="ui block header">All Orders</h1>
           <div className="ui three cards">{orders}</div>

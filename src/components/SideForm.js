@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 
 const SideForm = props => {
+  // wrong prop names
   return (
     <Fragment>
       <h1>
